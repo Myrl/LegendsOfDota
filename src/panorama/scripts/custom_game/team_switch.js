@@ -55,6 +55,8 @@ function SetTeamInfo() {
         $("#ListDivider"+o).AddClass("hidden");
     }
 
+    $.Msg(enemyIDS)
+
     for (var enemyID of enemyIDS) {
         var enemyInfo = Game.GetPlayerInfo(enemyID);
         if (LeftGame(enemyID)) {
