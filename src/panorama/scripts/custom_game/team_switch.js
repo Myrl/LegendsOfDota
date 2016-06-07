@@ -48,8 +48,8 @@ function SetTeamInfo() {
     var i = 0;
     var teamDifference = 0;
     
-    var enemyIDS = playerIDS.filter(function (x) { customTeamAssignments[id] == enemyTeam } )
-    var allyIDS = playerIDS.filter(function(x) { customTeamAssignments[id] != enemyTeam } )
+    var enemyIDS = playerIDS.filter(function (id) { customTeamAssignments[id] == enemyTeam } )
+    var allyIDS = playerIDS.filter(function(id) { customTeamAssignments[id] != enemyTeam } )
 
     for(var o = 0; o <= 5; o++){
         $("#ListDivider"+o).AddClass("hidden");
